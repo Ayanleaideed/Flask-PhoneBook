@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input[type="search"] {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  outline: none;
+  margin-right: 10px;
+}
+input[type="submit"] {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #3367d6;
+}
+@media screen and (max-width: 480px) {
+  form {
+    flex-direction: column;
+    height: auto;
+  }
+  input[type="search"],
+  input[type="submit"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
