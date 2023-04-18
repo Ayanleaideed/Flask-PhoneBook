@@ -20,7 +20,7 @@ def add_entry():
 
 
 
-@app.route('/search', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def Search_entry():
     if request.method == 'POST':
         name = request.form.get('name')
@@ -38,6 +38,28 @@ def Search_entry():
     return render_template('search.html')
 
 
+@app.route('/delete', methods=['GET', 'POST'])
+def Delete_entry():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        phone = request.form.get('phone')
+
+        if name and phone:
+            # Read the contents of the file
+            with open('phone_book.txt', 'r') as f:
+                lines = f.readlines()
+
+            # Find and remove the line(s) to delete
+            new_lines = []
+            for line in lines:
+                if f"{name}," not in line or f"{phone}" not in line:
+                    new_lines.append(line)
+
+            # Write the updated file back
+            with open('phone_book.txt', 'w') as f:
+                f.writelines(new_lines)
+
+    return render_template('delete_entry.html')
 
 
 def write_file(name, phone):
