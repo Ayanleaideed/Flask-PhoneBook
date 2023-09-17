@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Entry</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="search-form">
+            <form method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="btns">
+                <a href="/" class="btn">Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

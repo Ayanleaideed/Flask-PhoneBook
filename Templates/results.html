@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Results</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            /* Light gray background for the whole page */
+            font-family: Arial, sans-serif;
+            /* Improved font family for better readability */
+            margin: 0;
+            /* Remove default body margin */
+            padding: 0;
+            /* Remove default body padding */
+        }
+
+        h1 {
+            background-color: #4CAF50;
+            /* Green header background */
+            color: white;
+            /* White text color for header */
+            padding: 20px;
+            /* Add padding to the header for better spacing */
+            text-align: center;
+            /* Center-align the header text */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            /* Add space between the header and the table */
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Add hover effect to table rows */
+        tr:hover {
+            background-color: #e0e0e0;
+
+        }
+
+        /* Style the Home button */
+        button {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        a.btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            /* Green button background */
+            color: white;
+            /* White text color for the button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            /* Remove underlines from the link */
+        }
+
+        a.btn:hover {
+            background-color: #45a049;
+            /* Darker green on hover */
+        }
+
+        /* Style the search bar */
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: lightblue;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Results</h1>
+    <input type="search" id="searchInput" placeholder="Search...">
+    {% if rows %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td>{{ row.phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No entries found.</p>
+    {% endif %}
+    <button><a href="/" class="btn">Home</a></button>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+
+</html>

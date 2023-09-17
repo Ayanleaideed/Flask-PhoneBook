@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edit</h1>
+        <div id="Edit-form">
+            <form method="POST" action="{{ url_for('Edit_entry') }}">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autofocus placeholder="Name" required>
+
+                <label for="name">New Name:</label>
+                <input type="text" id="name" name="new_name" autofocus placeholder="Name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" autofocus placeholder="Number" required>
+
+                <label for="phone"> New Phone Number:</label>
+                <input type="tel" id="phone" name="new_phone" autofocus placeholder="Number" required>
+
+                <input type="submit" name="delete_btn" value="   Edit   ">
+                <div class="btns">
+                    <a href="/" class="btn">Home</a>
+
+
+                </div>
+            </form>
+        </div>
+
+</body>
+
+</html>

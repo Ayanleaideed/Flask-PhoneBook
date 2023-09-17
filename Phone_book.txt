@@ -1,0 +1,20 @@
+Emma Smith,(240) 125-9087
+b  Johnson	,(241) 352-4421
+Ava Davis,(240) 819-7609
+William Miller,(241) 720-3524
+Sophia Martin,(240) 218-9136
+Ethan Clark,(241) 698-7815
+Isabella Taylor,(240) 392-8710
+James Wright,(241) 518-1049
+Mia Adams,(240) 942-6597
+Benjamin Hill,(241) 813-2390
+Benjamin (241) 813-2390
+Benjamin,(241) 412-2412
+doozy,892-5662-992
+<<<<<<< HEAD:PhoneBook/Phone_book.txt
+Test new Entries,999-999-999
+new name,222
+john ,(241) 813-2390
+=======
+
+>>>>>>> 2a8f64ec7f0f762afe5e0f8f561dd1ff105bdc39:PhoneBook/venv/Phone_book.txt

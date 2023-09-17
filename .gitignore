@@ -1,0 +1,14 @@
+# Ignore the virtual environment directory
+.venv/
+venv/
+# Ignore Python compiled files
+__pycache__/
+
+# Ignore other development-related files or directories
+*.pyc
+.DS_Store  # Mac OS-specific
+
+# Ignore personal and sensitive files and directories
+config.json  # Example: Ignore a JSON configuration file
+secrets/     # Example: Ignore a directory containing secrets or sensitive data
+credentials/ # Example: Ignore a directory containing credentials

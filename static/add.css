@@ -1,0 +1,91 @@
+body {
+  background-color: navy;
+  margin: 0; /* Remove default body margin */
+  height: 100vh; /* Ensure the body covers the entire viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.container {
+  font-size: x-large;
+  font-family: cursive;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(18, 15, 189, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Set a fixed width for the container if desired */
+}
+
+/* Rest of your CSS styles */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+label {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  padding: 10px; /* Increase padding for a nicer appearance */
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Add a border for a cleaner look */
+  box-shadow: 0px 0px 5px #ccc;
+  width: 100%; /* Make input elements expand to container width */
+}
+
+input[type="submit"] {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Increase padding for a nicer appearance */
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+a {
+  color: #2ecc71;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* a:hover {
+  text-decoration: underline;
+} */
+
+a.btn {
+  display: block;
+  margin-top: 5px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Increase padding for a nicer appearance */
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+a.btn:hover {
+  background-color: #27ae60;
+}
+
+h1{
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
