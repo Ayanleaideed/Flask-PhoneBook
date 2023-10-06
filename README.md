@@ -6,7 +6,6 @@
 ![My Image](image-4.png)
 ![My Image](image.png)
 
-```shall
 
 
 
