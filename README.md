@@ -9,10 +9,9 @@
 
 
 
-Welcome to the Phone Book Web Application! This application allows you to manage a simple phone book through a web interface. You can add, search for, edit, and delete entries in your phone book.
+Welcome to the Phone Book Web Application! This application allows you to manage a simple phone book through a web interface. 
+You can add, search for, edit, and delete entries in your phone book.
 ## Tools
-
-
 
 ```shell
 HTML
